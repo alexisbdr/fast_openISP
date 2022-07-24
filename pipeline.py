@@ -15,9 +15,8 @@ from multiprocessing import Process
 
 import numpy as np
 
-from utils.yacs import Config
-from modules.basic_module import MODULE_DEPENDENCIES
-
+from fast_openISP.utils import Config
+from fast_openISP.modules import *
 
 class Pipeline:
     """ Core fast-openISP pipeline """

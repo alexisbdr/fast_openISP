@@ -143,7 +143,7 @@ class Config(OrderedDict):
             raise TypeError(f'expected a dict, but given a {type(dic)}')
 
         super().__init__(Config._from_dict(dic))
-        self.freeze()
+        #self.freeze()
 
     def from_yaml(self, yaml_path):
         """ Instantiation from a yaml file. """
@@ -161,7 +161,7 @@ class Config(OrderedDict):
             dic = yaml.safe_load(fp)
 
         super().__init__(Config._from_dict(dic))
-        self.freeze()
+        #self.freeze()
 
     def from_namespace(self, namespace):
         """
@@ -192,7 +192,7 @@ class Config(OrderedDict):
 
         nested_dict = self._separator_dict_to_nested_dict(vars(namespace))
         super().__init__(Config._from_dict(nested_dict))
-        self.freeze()
+        #self.freeze()
 
     def merge(self, other, allow_new_attr=False, keep_existed_attr=True):
         """

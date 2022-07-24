@@ -1,5 +1,6 @@
 from .aaf import AAF
 from .awb import AWB
+from .awb import AWB_GrayWorld
 from .bcc import BCC
 from .blc import BLC
 from .bnf import BNF
@@ -15,3 +16,5 @@ from .gac import GAC
 from .hsc import HSC
 from .nlm import NLM
 from .scl import SCL
+
+from .basic_module import MODULE_DEPENDENCIES

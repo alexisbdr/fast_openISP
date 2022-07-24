@@ -18,9 +18,9 @@ module_enable_status:                 # do NOT modify modules order
   scl: False
 
 hardware:
-  raw_width: 1920
-  raw_height: 1080
-  raw_bit_depth: 10
+  raw_width: 4476
+  raw_height: 2954
+  raw_bit_depth: 12
   bayer_pattern: rggb
 
 
@@ -30,20 +30,20 @@ dpc:
   diff_threshold: 30
 
 blc:
-  bl_r: 0                             # a subtractive value, not additive!
-  bl_gr: 0
-  bl_gb: 0
-  bl_b: 0
+  bl_r: 128                             # a subtractive value, not additive!
+  bl_gr: 127
+  bl_gb: 128
+  bl_b: 128
   alpha: 0                            # x1024
   beta: 0                             # x1024
 
 aaf: ~
 
 awb:
-  r_gain: &r_gain 1860                # x1024
+  r_gain: &r_gain 1024                # x1024
   gr_gain: 1024                       # x1024
   gb_gain: 1024                       # x1024
-  b_gain: &b_gain 1280                # x1024
+  b_gain: &b_gain 1024                # x1024
 
 cnf:
   diff_threshold: 0
