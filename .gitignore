@@ -8,3 +8,5 @@
 tmp/
 temp/
 TODO*
+*/__pycache__/
+*.pyc

@@ -15,7 +15,7 @@ module_enable_status:                 # do NOT modify modules order
   fcs: True
   hsc: True
   bcc: True
-  scl: False
+  scl: True
 
 hardware:
   raw_width: 9280
